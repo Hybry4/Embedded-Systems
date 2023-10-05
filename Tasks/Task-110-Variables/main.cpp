@@ -34,7 +34,7 @@ int main()
     // Char
     char character;
     character = 'A';
-    printf("The character %c has the ASCII code %d\n", character, character);
+    printf("The character %c \nhas the ASCII code %d\n", character, character);
 
     // Short
     short shortCount = 32766;

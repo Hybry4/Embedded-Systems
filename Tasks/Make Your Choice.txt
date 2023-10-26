@@ -1,0 +1,49 @@
+/* mbed Microcontroller Library
+ * Copyright (c) 2019 ARM Limited
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+#include "mbed.h"
+#include <cstdio>
+
+int Tchoice;
+
+int main()
+{
+    while(true)
+   {
+    wait_us(1000000);
+    puts("");
+    puts("");
+    puts("");
+    puts("");
+    wait_us(1000000);
+    puts("make your choice:");
+    puts("1 - Number 15");
+    puts("2 - Snoop");
+    puts("3 - Bubble");
+    puts("4 - Other");
+    puts("");
+
+    scanf("%d", &Tchoice);
+
+    switch (Tchoice) {
+    case 1:
+    puts("But as it turns out; that might be what you get..");
+    break;
+
+    case 2:
+    puts("Snooping as usual I see...");
+    break;
+
+    case 3:
+    puts("YOU PARASITE!!");
+    break;
+
+    case 4:
+    puts("There is no other, pick a real choice :skull:");
+    break;
+    }
+   }   
+    puts("fin");
+}
